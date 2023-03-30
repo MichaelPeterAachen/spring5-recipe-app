@@ -1,0 +1,10 @@
+INSERT INTO category (description) VALUES ('American')
+INSERT INTO category (description) VALUES ('Italian')
+INSERT INTO category (description) VALUES ('Mexican')
+INSERT INTO category (description) VALUES ('German')
+INSERT INTO unit_of_measure (description) VALUES ('Teaspoon')
+INSERT INTO unit_of_measure (description) VALUES ('Tablespoon')
+INSERT INTO unit_of_measure (description) VALUES ('Cup')
+
+INSERT INTO recipe (name, description) VALUES ('Perfect Guacamole', 'Do It like explained')
+INSERT INTO recipe (name, description) VALUES ('My Tacos', 'Do It like explained')
