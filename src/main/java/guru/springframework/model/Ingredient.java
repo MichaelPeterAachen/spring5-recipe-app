@@ -2,25 +2,24 @@ package guru.springframework.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.concurrent.BlockingDeque;
 
 @Entity
 public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
     private String description;
     private BigDecimal amount;
     @OneToOne(fetch = FetchType.EAGER)
-    private UnitOfMeasure unitOfMeasure;
+    private UnitOfMeasure uom;
     @ManyToOne
     private Recipe recipe;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(final String id) {
+    public void setId(final Long id) {
         this.id = id;
     }
 
@@ -46,5 +45,13 @@ public class Ingredient {
 
     public void setDescription(final String description) {
         this.description = description;
+    }
+
+    public UnitOfMeasure getUom() {
+        return uom;
+    }
+
+    public void setUom(final UnitOfMeasure uom) {
+        this.uom = uom;
     }
 }

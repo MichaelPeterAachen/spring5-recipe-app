@@ -6,5 +6,8 @@ INSERT INTO unit_of_measure (description) VALUES ('Teaspoon')
 INSERT INTO unit_of_measure (description) VALUES ('Tablespoon')
 INSERT INTO unit_of_measure (description) VALUES ('Cup')
 
-INSERT INTO recipe (name, description) VALUES ('Perfect Guacamole', 'Do It like explained')
-INSERT INTO recipe (name, description) VALUES ('My Tacos', 'Do It like explained')
+INSERT INTO recipe (name, description) VALUES ('Perfect Guacamole', 'First recipe for perfect guacamole')
+INSERT INTO recipe (name, description) VALUES ('My Tacos', 'Second recipe for tacos')
+
+INSERT INTO RECIPE_CATEGORY (RECIPE_ID, CATEGORY_ID) VALUES (1,1)
+INSERT INTO RECIPE_CATEGORY (RECIPE_ID, CATEGORY_ID) VALUES (1,2)

@@ -47,9 +47,9 @@ public class IndexController {
 
         Iterable<Recipe> allRecipes = recipeRepository.findAll();
         List<Recipe> list = new ArrayList<Recipe>();
-        list.add (new Recipe("1","Test1"));
-        list.add (new Recipe("2","Test2"));
-        list.add (new Recipe("3","Test3"));
+        list.add (new Recipe(1L,"Test1"));
+        list.add (new Recipe(2L,"Test2"));
+        list.add (new Recipe(3L,"Test3"));
         model.addAttribute("recipes", allRecipes);
         return "index";
     }

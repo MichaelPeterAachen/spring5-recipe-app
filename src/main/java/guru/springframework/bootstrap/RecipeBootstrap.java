@@ -17,6 +17,7 @@ public class RecipeBootstrap implements CommandLineRunner {
     public void run(String... args) throws Exception {
         Recipe recipe = new Recipe();
         recipe.setName("Another cool recipe");
+        recipe.setDescription("This is the first recipe (bootstrap)");
         recipeRepository.save(recipe);
     }
 }
